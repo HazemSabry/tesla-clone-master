@@ -46,7 +46,7 @@ function Header() {
           {sections &&
             sections.map((sections) => (
               <li>
-                <a key={sections} href="">
+                <a key={sections} href="#Home">
                   {sections}
                 </a>
               </li>
