@@ -13,20 +13,20 @@ function Header() {
   console.log(cars);
   return (
     <Container>
-      <a href="#">
+      <a href="">
         <img src="/images/logo.svg" alt="logo" />
       </a>
       <Menu>
         {cars &&
           cars.map((car) => (
-            <a key={car} href="#">
+            <a key={car} href="">
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="">Shop</a>
+        <a href="">Tesla Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -37,7 +37,7 @@ function Header() {
           {cars &&
             cars.map((car) => (
               <li>
-                <a key={car} href="#">
+                <a key={car} href="">
                   {car}
                 </a>
               </li>
@@ -46,7 +46,7 @@ function Header() {
           {sections &&
             sections.map((sections) => (
               <li>
-                <a key={sections} href="#">
+                <a key={sections} href="">
                   {sections}
                 </a>
               </li>
